@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            grades
+        </title>
+    </head>
+<body onload="grade()";>
+    <script>
+        function grade(){
+            score = prompt("Please Enter Your Score");
+            box();
+        }
+
+
+        function box(){
+        if (score <= 100 && score >= 80 ){
+            alert ('A');
+        }
+        else if(score <=79 && score >=60){
+            alert('B');
+        }
+        else if(score <=59 && score >=50){
+            alert('C');
+        }
+        else if(score <=49 && score >=40){
+            alert('D');
+        }
+        else if(score <=39 && score >=30){
+            alert('E');
+        }
+        else if(score <=29 && score >=0){
+            alert('F');
+        }
+        else{
+            alert('Please Input a score from the range of 0-100');
+            grade();
+        }
+        }
+    </script>
+</body>
+</html>
+
+
+
